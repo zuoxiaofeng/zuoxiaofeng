@@ -1,0 +1,29 @@
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  .cal-item {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    .op-item,
+    .op {
+      width: 30px;
+    }
+    .op-ret {
+      width: 50px;
+    }
+    .op-right {
+      margin-left: 10px;
+      color: green;
+    }
+    .op-wrong {
+      margin-left: 10px;
+      color: red;
+    }
+    .op-right-ret {
+      margin-left: 15px;
+      color: green;
+    }
+  }
+}
