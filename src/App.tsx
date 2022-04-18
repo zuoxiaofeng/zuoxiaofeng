@@ -106,6 +106,8 @@ class App extends React.Component<{}, { nCount: Number }> {
   }
 
   setCount(e: React.ChangeEvent<{ value: String }>) {
+    this.nRight = 0;
+    this.nWrong = 0;
     this.setState({ nCount: Number(e.target.value) })
   }
 
@@ -116,10 +118,10 @@ class App extends React.Component<{}, { nCount: Number }> {
         let op = '+';
         let op1 = 0;
         let op2 = 0;
-        if (Math.random() > 0.5) {
+        if (Math.random() > 0.3) {
           op = '-'
           op1 = Math.floor(Math.random() * 16) + 4
-          op2 = Math.floor(op1 * Math.random());
+          op2 = Math.floor(op1 * Math.random()) + 1;
         }
         else {
           op1 = Math.floor(Math.random() * 20)
